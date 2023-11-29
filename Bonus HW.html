@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    #form-container {
+      width: 50%;
+      margin: 5% auto;
+      background-color: #fff;
+      padding: 2%;
+      border-radius: 2%;
+      box-shadow: 0 0 2% rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group {
+      margin-bottom: 1%; 
+      overflow: hidden;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.5%;
+      font-weight: bold;
+      float: left;
+      width: 15%; 
+      text-align: left;
+      margin-right: 1%; 
+    }
+   
+    input,
+    textarea {
+      width: 83%;
+      padding: 1%;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 1%;
+      font-size: 1em;
+      margin-bottom: 2%;
+    }
+
+    textarea {
+      resize: none;
+      height: 100px;
+    }
+
+    .form-group::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .half-width {
+      width: 40%;
+      float: left;
+      margin-right: 2%;
+    }
+
+    .full-width {
+      width: 50%;
+      margin-bottom: 1%;
+      clear: both;
+    }
+
+    .phone-label {
+      float: left;
+      width: 20%; 
+      text-align: left;
+      margin-bottom: 1%;
+    }
+
+    .phone-input {
+      width: 75%;
+      float: right;
+    }
+
+    #picture {
+      display: block;
+      margin: 3% auto;
+      max-width: 83%;
+      height: auto;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="form-container">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Name">
+
+      <label for="email">Email:</label>
+      <div class="half-width">
+        <input type="email" id="email" name="email" placeholder="e.g.,123abc@gmail.com" required>
+      </div>
+
+      <div class="half-width">
+        <label for="phone" class="phone-label">Phone number:</label>
+        <input type="text" id="phone" name="phone" placeholder="+886" class="phone-input" required>
+      </div>
+
+      <label for="address">Address:</label>
+      <input type="text" id="address" name="address" placeholder="Enter your address" required></textarea>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" placeholder="Say something here..." rows="5" required></textarea>
+    </div>
+
+    <label for="picture">Picture:</label>
+    <img id="picture" src="/Users/USER/Desktop/image1.jpg" alt="Picture description">
+  </div>
+</body>
+
+</html>
